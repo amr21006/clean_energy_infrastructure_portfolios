@@ -1,0 +1,102 @@
+experiment:
+  name: bdg2_pa_stt_revision_main
+  output_dir: revision_results
+  seed: 42
+  device: cuda
+
+data:
+  source:
+    type: bdg2_meter_csv
+    meter_path: data/external/bdg2_extract/buds-lab-building-data-genome-project-2-3d0cbaf/data/meters/cleaned/electricity_cleaned.csv
+    metadata_path: data/external/bdg2_extract/buds-lab-building-data-genome-project-2-3d0cbaf/data/metadata/metadata.csv
+    weather_path: data/external/bdg2_extract/buds-lab-building-data-genome-project-2-3d0cbaf/data/weather/weather.csv
+    selection_strategy: explicit_manifest
+    selected_buildings_path: manifests/cohort_selected_buildings.csv
+  timestamp_col: timestamp
+  building_col: building_id
+  target_col: meter_reading
+  max_buildings: 95
+  min_history: 1000
+  min_nonzero_fraction: 0.20
+  min_target_mean: 1.0
+  clip_negative: true
+
+features:
+  sequence_length: 48
+  horizon: 1
+  require_contiguous_hourly: true
+  feature_cols:
+    - meter_reading
+    - air_temperature
+    - hour_sin
+    - hour_cos
+    - dow_sin
+    - dow_cos
+    - month_sin
+    - month_cos
+  time_split:
+    train: 0.70
+    validation: 0.15
+    test: 0.15
+
+baselines:
+  enabled:
+    - persistence
+    - ridge_summary
+    - hist_gradient_boosting_summary
+    - lightgbm_summary
+    - lightgbm_full_lags
+    - xgboost_summary
+    - catboost_summary
+
+neural_baselines:
+  enabled:
+    - tcn
+    - residual_tcn
+  hidden_size: 64
+  num_layers: 1
+  tcn_channels: 64
+  tcn_levels: 3
+  dropout: 0.10
+  max_epochs: 6
+  batch_size: 2048
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  patience: 2
+  mixed_precision: true
+
+model:
+  name: anchored_temporal_transformer
+  reporting_name: pa_stt
+  d_model: 64
+  n_heads: 4
+  n_layers: 2
+  dropout: 0.10
+  dim_feedforward: 128
+  residual_feature_index: 0
+  ramp_weight: 0.0
+  ramp_base_tolerance: 0.25
+  ramp_temperature_coefficient: 3.0
+  ramp_temperature_feature_index: 1
+  max_epochs: 10
+  batch_size: 2048
+  evaluation_batch_size: 1024
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  patience: 3
+  mixed_precision: true
+
+validation:
+  seeds:
+    - 42
+    - 52
+    - 62
+  ablations:
+    - name: plain_transformer
+      model_overrides:
+        residual_feature_index:
+        ramp_weight: 0.0
+    - name: anchored_with_ramp_regularizer
+      model_overrides:
+        residual_feature_index: 0
+        ramp_weight: 0.02

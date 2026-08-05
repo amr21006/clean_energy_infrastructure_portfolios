@@ -1,0 +1,31 @@
+{
+  "profile": {
+    "path": ".revision\\evidence\\selection\\full_electricity_cohort_profile.csv",
+    "sha256": "71469558db98286cc5ac7cc86e46f4aa26141de5e3fdf3d9fb6f379419c1e4d5"
+  },
+  "algorithm": "After applying the predeclared quality thresholds to all electricity meters, draw five buildings without replacement from each of the 19 sites using NumPy Generator PCG64 and the recorded seed.",
+  "seed": 20260730,
+  "buildings_per_site": 5,
+  "counts": {
+    "eligible_buildings": 1536,
+    "eligible_sites": 19,
+    "selected_buildings": 95,
+    "selected_sites": 19,
+    "eligible_primary_uses": 17,
+    "selected_primary_uses": 11
+  },
+  "representativeness": {
+    "primary_use_jensen_shannon_divergence_bits": 0.045387114119179214,
+    "reviewed_primary_use_jensen_shannon_divergence_bits": 0.38481020118598175,
+    "selected_floor_area_median_m2": 6778.0,
+    "eligible_floor_area_median_m2": 5329.3,
+    "selected_floor_area_iqr_m2": [
+      3284.95,
+      12914.0
+    ],
+    "eligible_floor_area_iqr_m2": [
+      2157.2250000000004,
+      10552.125
+    ]
+  }
+}
