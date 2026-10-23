@@ -1,0 +1,6 @@
+2026-07-13 21:13:36,251 | INFO | Loading verified longitudinal panel cache
+2026-07-13 21:13:36,689 | INFO | Panel ready: 10,262 projects, 178,528 unit-month rows, 175,420 transitions, 12,015 landmarks
+2026-07-13 21:13:36,689 | INFO | Generating descriptive and multistate outputs
+2026-07-13 21:13:50,796 | INFO | Training and validating predictive models
+2026-07-13 21:50:56,450 | INFO | Running completion and consistency audit
+2026-07-13 21:50:57,304 | INFO | Pipeline completed in 2242.1 seconds

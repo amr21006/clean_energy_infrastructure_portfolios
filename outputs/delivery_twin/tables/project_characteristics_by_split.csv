@@ -1,0 +1,5 @@
+﻿analysis_split,units,development_clusters,entities,states_or_territories,capacity_mw_sum,capacity_mw_median,capacity_mw_iqr_low,capacity_mw_iqr_high,operating_terminal_n,canceled_terminal_n,still_planned_terminal_n,unresolved_terminal_n
+outside_test_window,1923,1824,987,50,193133.90000000002,50.0,4.025,150.0,591,87,1214,31
+test,1095,1058,562,49,88846.0,30.0,4.275,127.25,758,87,235,15
+train,3579,3268,1812,53,171634.2,5.0,1.8,50.95,2941,303,236,99
+validation,575,565,296,43,57104.3,55.0,3.8,128.0,449,52,66,8

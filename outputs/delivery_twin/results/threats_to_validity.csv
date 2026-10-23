@@ -1,0 +1,11 @@
+﻿threat,concern,implemented_response
+Construct validity,"EIA rows are generating units, not contracts or full projects.",Primary unit-level estimates are cluster weighted; uncertainty is bootstrapped by plant-development cluster; language is restricted to reported generating-unit delivery.
+Left truncation,Projects already in the September 2015 pipeline have unknown prior histories.,A 12-month burn-in is prespecified; archive-start projects are excluded from the primary cohort.
+Right censoring,Recent or long-duration projects may remain planned at May 2026.,Horizon outcomes require sufficient observable follow-up; unresolved observations are censored.
+Competing risks,Cancellation prevents later operation on the observed identity.,Operation and cancellation are modeled separately and as terminal multistate transitions.
+Data leakage,Future schedule revisions or stages could inflate performance.,Features are cumulative only through each origin month; temporal entry cohorts are project-disjoint.
+Class imbalance,Cancellation is uncommon.,"Average precision, Brier score, calibration, per-class metrics, and decision curves supplement ROC-AUC and accuracy."
+Identity instability,Plant/generator identifiers or reporting organizations can change.,Identity-change counts are audited; unreconciled units are retained only as censored observations.
+Schema drift,Headers and available geography fields changed over 2015-2026.,Direct header-based parsing and stable primary predictors are used; missingness is explicitly audited.
+Overfitting,Flexible AI may fit administrative idiosyncrasies.,"Simple Markov and logistic baselines, validation tuning, calibration, and subgroup checks are required. Prespecified benchmarks use temporal testing; post-inspection custom models are labeled exploratory and require new-cohort confirmation."
+Causal overclaiming,Predictive associations do not identify causal delivery mechanisms.,All effect tables are labeled adjusted associations; causal verbs are prohibited.

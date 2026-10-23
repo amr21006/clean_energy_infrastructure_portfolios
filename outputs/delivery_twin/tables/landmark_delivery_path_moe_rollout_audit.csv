@@ -1,0 +1,3 @@
+﻿split,observations,operation_horizon,cancellation_horizon,maximum_probability_mass_error,predict_seconds,backend,future_cumulative_features_frozen,deterministic_clock_features_advanced
+validation,575,12,24,7.459073629867419e-07,12.415322299999389,cuda_gpu,True,True
+test,1095,12,24,8.658650452186833e-07,21.78711199999998,cuda_gpu,True,True

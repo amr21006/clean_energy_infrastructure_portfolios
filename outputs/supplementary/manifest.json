@@ -1,0 +1,6 @@
+{
+ "spanning_clusters": 2,
+ "plants_spanning_partitions": 43,
+ "seed": 20261016,
+ "bootstrap_reps": 500
+}

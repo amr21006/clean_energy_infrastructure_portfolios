@@ -1,0 +1,188 @@
+﻿dataset,variable,dtype,description,missing_fraction,unique_values
+projects,unit_id,object,Deterministic EIA Plant ID plus Generator ID key.,0.0,10262
+projects,plant_id,object,Derived or source variable; see analysis code.,0.0,7566
+projects,generator_id,object,Derived or source variable; see analysis code.,0.0,6991
+projects,entity_id_initial,object,Derived or source variable; see analysis code.,0.0,4283
+projects,entity_name_initial,object,Derived or source variable; see analysis code.,0.0,4319
+projects,plant_name_initial,object,Derived or source variable; see analysis code.,0.0,7597
+projects,state_code,object,Derived or source variable; see analysis code.,0.0,53
+projects,county_initial,object,Derived or source variable; see analysis code.,0.0,1152
+projects,balancing_authority_initial,object,Derived or source variable; see analysis code.,0.0,72
+projects,sector_group,object,Derived or source variable; see analysis code.,0.0,5
+projects,technology_group,object,Derived or source variable; see analysis code.,0.0,9
+projects,technology_name_initial,object,Derived or source variable; see analysis code.,0.0,28
+projects,energy_source_code,object,Derived or source variable; see analysis code.,0.0,28
+projects,prime_mover_code,object,Derived or source variable; see analysis code.,0.0,21
+projects,capacity_mw_initial,float64,Derived or source variable; see analysis code.,0.0008770220229974664,1188
+projects,first_report_month,object,Derived or source variable; see analysis code.,0.0,123
+projects,first_report_ordinal,int64,Derived or source variable; see analysis code.,0.0,123
+projects,last_planned_report_month,object,Derived or source variable; see analysis code.,0.0,129
+projects,last_planned_report_ordinal,int64,Derived or source variable; see analysis code.,0.0,129
+projects,planned_observation_count,int64,Derived or source variable; see analysis code.,0.0,115
+projects,initial_state,object,Derived or source variable; see analysis code.,0.0,8
+projects,initial_planned_operation_month,object,Derived or source variable; see analysis code.,0.0008770220229974664,187
+projects,initial_planned_operation_ordinal,float64,Derived or source variable; see analysis code.,0.0008770220229974664,187
+projects,terminal_category,object,Derived or source variable; see analysis code.,0.0,5
+projects,event_type,object,"First modeled terminal event: O operation, C cancellation, or censored.",0.0,3
+projects,event_month,object,Derived or source variable; see analysis code.,0.2617423504190216,128
+projects,event_ordinal,float64,Derived or source variable; see analysis code.,0.2617423504190216,128
+projects,operating_month,object,Derived or source variable; see analysis code.,0.35529136620541807,132
+projects,operating_ordinal,float64,Derived or source variable; see analysis code.,0.35529136620541807,132
+projects,first_canceled_month,object,Derived or source variable; see analysis code.,0.8901773533424284,119
+projects,first_canceled_ordinal,float64,Derived or source variable; see analysis code.,0.8901773533424284,119
+projects,operation_before_or_at_entry,bool,Derived or source variable; see analysis code.,0.0,2
+projects,is_clean_primary,bool,Derived or source variable; see analysis code.,0.0,2
+projects,passes_burn_in,bool,Derived or source variable; see analysis code.,0.0,2
+projects,has_24_month_potential_followup,bool,Derived or source variable; see analysis code.,0.0,2
+projects,analysis_split,object,Derived or source variable; see analysis code.,0.0,4
+projects,development_cluster_id,object,"Plant, technology group, and initial reported operation-month cluster used to reduce multi-unit pseudo-replication.",0.0,8515
+projects,entity_id_count,int64,Derived or source variable; see analysis code.,0.0,4
+projects,technology_group_count,int64,Derived or source variable; see analysis code.,0.0,2
+projects,state_code_count,int64,Derived or source variable; see analysis code.,0.0,2
+projects,development_cluster_size,int64,Derived or source variable; see analysis code.,0.0,14
+projects,cluster_equalizing_weight,float64,Inverse number of generating units in the plant-development cluster.,0.0,14
+projects,eligible_primary_cohort,bool,Derived or source variable; see analysis code.,0.0,2
+unit_month_panel,unit_id,object,Deterministic EIA Plant ID plus Generator ID key.,0.0,10262
+unit_month_panel,plant_id,object,Derived or source variable; see analysis code.,0.0,7566
+unit_month_panel,generator_id,object,Derived or source variable; see analysis code.,0.0,6991
+unit_month_panel,report_month,object,Derived or source variable; see analysis code.,0.0,129
+unit_month_panel,report_ordinal,int64,Derived or source variable; see analysis code.,0.0,129
+unit_month_panel,entity_id,object,Derived or source variable; see analysis code.,0.0,4479
+unit_month_panel,entity_name,object,Derived or source variable; see analysis code.,0.0,4610
+unit_month_panel,plant_name,object,Derived or source variable; see analysis code.,0.0,7877
+unit_month_panel,state_code,object,Derived or source variable; see analysis code.,0.0,53
+unit_month_panel,county,object,Derived or source variable; see analysis code.,0.0,1204
+unit_month_panel,balancing_authority_code,object,Derived or source variable; see analysis code.,0.0,74
+unit_month_panel,sector_name,object,Derived or source variable; see analysis code.,0.0,9
+unit_month_panel,sector_group,object,Derived or source variable; see analysis code.,0.0,5
+unit_month_panel,technology_name,object,Derived or source variable; see analysis code.,0.0,28
+unit_month_panel,technology_group,object,Derived or source variable; see analysis code.,0.0,9
+unit_month_panel,energy_source_code,object,Derived or source variable; see analysis code.,0.0,28
+unit_month_panel,prime_mover_code,object,Derived or source variable; see analysis code.,0.0,21
+unit_month_panel,capacity_mw,float64,Derived or source variable; see analysis code.,0.00016804086753898547,1418
+unit_month_panel,planned_operation_month,object,Derived or source variable; see analysis code.,9.522315827209177e-05,194
+unit_month_panel,planned_operation_ordinal,float64,Derived or source variable; see analysis code.,9.522315827209177e-05,194
+unit_month_panel,raw_status,object,Derived or source variable; see analysis code.,0.0,9
+unit_month_panel,current_state,object,Harmonized monthly delivery state.,0.0,8
+unit_month_panel,latitude,float64,Derived or source variable; see analysis code.,0.018574117225309196,7381
+unit_month_panel,longitude,float64,Derived or source variable; see analysis code.,0.018607725398816992,7874
+unit_month_panel,first_report_ordinal,int64,Derived or source variable; see analysis code.,0.0,123
+unit_month_panel,initial_planned_operation_ordinal,float64,Derived or source variable; see analysis code.,0.0005321294138734541,187
+unit_month_panel,event_type,object,"First modeled terminal event: O operation, C cancellation, or censored.",0.0,3
+unit_month_panel,event_ordinal,float64,Derived or source variable; see analysis code.,0.3101922387524646,128
+unit_month_panel,terminal_category,object,Derived or source variable; see analysis code.,0.0,5
+unit_month_panel,eligible_primary_cohort,bool,Derived or source variable; see analysis code.,0.0,2
+unit_month_panel,analysis_split,object,Derived or source variable; see analysis code.,0.0,4
+unit_month_panel,development_cluster_id,object,"Plant, technology group, and initial reported operation-month cluster used to reduce multi-unit pseudo-replication.",0.0,8515
+unit_month_panel,development_cluster_size,int64,Derived or source variable; see analysis code.,0.0,14
+unit_month_panel,cluster_equalizing_weight,float64,Inverse number of generating units in the plant-development cluster.,0.0,14
+unit_month_panel,months_since_first_report,int64,Derived or source variable; see analysis code.,0.0,129
+unit_month_panel,initial_reported_lead_months,float64,Derived or source variable; see analysis code.,0.0005321294138734541,91
+unit_month_panel,months_to_reported_operation,float64,Derived or source variable; see analysis code.,9.522315827209177e-05,158
+unit_month_panel,log1p_capacity_mw,float64,Derived or source variable; see analysis code.,0.00016804086753898547,1418
+unit_month_panel,schedule_revision_count,int64,Cumulative count of reported operation-date changes available at the observation month.,0.0,70
+unit_month_panel,absolute_schedule_movement_months,float64,Derived or source variable; see analysis code.,0.0,142
+unit_month_panel,cumulative_schedule_slip_months,float64,Current reported operation month minus the initial reported operation month.,0.0005377307761247536,159
+unit_month_panel,state_reversal_count,int64,Cumulative number of backward movements in the ordered delivery-stage sequence.,0.0,4
+unit_month_panel,months_in_current_state,int64,Derived or source variable; see analysis code.,0.0,129
+unit_month_panel,concurrent_entity_pipeline_units,int64,Derived or source variable; see analysis code.,0.0,52
+unit_month_panel,prior_entity_completions,int64,Derived or source variable; see analysis code.,0.0,94
+monthly_transitions,unit_id,object,Deterministic EIA Plant ID plus Generator ID key.,0.0,10054
+monthly_transitions,plant_id,object,Derived or source variable; see analysis code.,0.0,7405
+monthly_transitions,generator_id,object,Derived or source variable; see analysis code.,0.0,6857
+monthly_transitions,report_month,object,Derived or source variable; see analysis code.,0.0,128
+monthly_transitions,report_ordinal,int64,Derived or source variable; see analysis code.,0.0,128
+monthly_transitions,entity_id,object,Derived or source variable; see analysis code.,0.0,4417
+monthly_transitions,entity_name,object,Derived or source variable; see analysis code.,0.0,4550
+monthly_transitions,plant_name,object,Derived or source variable; see analysis code.,0.0,7711
+monthly_transitions,state_code,object,Derived or source variable; see analysis code.,0.0,53
+monthly_transitions,county,object,Derived or source variable; see analysis code.,0.0,1198
+monthly_transitions,balancing_authority_code,object,Derived or source variable; see analysis code.,0.0,74
+monthly_transitions,sector_name,object,Derived or source variable; see analysis code.,0.0,9
+monthly_transitions,sector_group,object,Derived or source variable; see analysis code.,0.0,5
+monthly_transitions,technology_name,object,Derived or source variable; see analysis code.,0.0,28
+monthly_transitions,technology_group,object,Derived or source variable; see analysis code.,0.0,9
+monthly_transitions,energy_source_code,object,Derived or source variable; see analysis code.,0.0,28
+monthly_transitions,prime_mover_code,object,Derived or source variable; see analysis code.,0.0,21
+monthly_transitions,capacity_mw,float64,Derived or source variable; see analysis code.,0.0001596169193934557,1411
+monthly_transitions,planned_operation_month,object,Derived or source variable; see analysis code.,6.840725116862387e-05,193
+monthly_transitions,planned_operation_ordinal,float64,Derived or source variable; see analysis code.,6.840725116862387e-05,193
+monthly_transitions,raw_status,object,Derived or source variable; see analysis code.,0.0,9
+monthly_transitions,current_state,object,Harmonized monthly delivery state.,0.0,8
+monthly_transitions,latitude,float64,Derived or source variable; see analysis code.,0.018846197696955877,7227
+monthly_transitions,longitude,float64,Derived or source variable; see analysis code.,0.018874700718276138,7722
+monthly_transitions,first_report_ordinal,int64,Derived or source variable; see analysis code.,0.0,122
+monthly_transitions,initial_planned_operation_ordinal,float64,Derived or source variable; see analysis code.,0.000501653175236575,185
+monthly_transitions,event_type,object,"First modeled terminal event: O operation, C cancellation, or censored.",0.0,3
+monthly_transitions,event_ordinal,float64,Derived or source variable; see analysis code.,0.300216622962034,128
+monthly_transitions,terminal_category,object,Derived or source variable; see analysis code.,0.0,5
+monthly_transitions,eligible_primary_cohort,bool,Derived or source variable; see analysis code.,0.0,2
+monthly_transitions,analysis_split,object,Derived or source variable; see analysis code.,0.0,4
+monthly_transitions,development_cluster_id,object,"Plant, technology group, and initial reported operation-month cluster used to reduce multi-unit pseudo-replication.",0.0,8334
+monthly_transitions,development_cluster_size,int64,Derived or source variable; see analysis code.,0.0,14
+monthly_transitions,cluster_equalizing_weight,float64,Inverse number of generating units in the plant-development cluster.,0.0,14
+monthly_transitions,months_since_first_report,int64,Derived or source variable; see analysis code.,0.0,128
+monthly_transitions,initial_reported_lead_months,float64,Derived or source variable; see analysis code.,0.000501653175236575,90
+monthly_transitions,months_to_reported_operation,float64,Derived or source variable; see analysis code.,6.840725116862387e-05,156
+monthly_transitions,log1p_capacity_mw,float64,Derived or source variable; see analysis code.,0.0001596169193934557,1411
+monthly_transitions,schedule_revision_count,int64,Cumulative count of reported operation-date changes available at the observation month.,0.0,69
+monthly_transitions,absolute_schedule_movement_months,float64,Derived or source variable; see analysis code.,0.0,142
+monthly_transitions,cumulative_schedule_slip_months,float64,Current reported operation month minus the initial reported operation month.,0.000507353779500627,159
+monthly_transitions,state_reversal_count,int64,Cumulative number of backward movements in the ordered delivery-stage sequence.,0.0,4
+monthly_transitions,months_in_current_state,int64,Derived or source variable; see analysis code.,0.0,128
+monthly_transitions,concurrent_entity_pipeline_units,int64,Derived or source variable; see analysis code.,0.0,51
+monthly_transitions,prior_entity_completions,int64,Derived or source variable; see analysis code.,0.0,93
+monthly_transitions,next_state,object,Observed following-month state or immediate terminal state.,0.0,9
+monthly_transitions,transition_gap_months,int64,Derived or source variable; see analysis code.,0.0,2
+monthly_transitions,terminal_transition,bool,Derived or source variable; see analysis code.,0.0,2
+landmarks,unit_id,object,Deterministic EIA Plant ID plus Generator ID key.,0.0,7172
+landmarks,plant_id,object,Derived or source variable; see analysis code.,0.0,6017
+landmarks,generator_id,object,Derived or source variable; see analysis code.,0.0,5480
+landmarks,report_month,object,Derived or source variable; see analysis code.,0.0,114
+landmarks,report_ordinal,int64,Derived or source variable; see analysis code.,0.0,114
+landmarks,entity_id,object,Derived or source variable; see analysis code.,0.0,3452
+landmarks,entity_name,object,Derived or source variable; see analysis code.,0.0,3496
+landmarks,plant_name,object,Derived or source variable; see analysis code.,0.0,6135
+landmarks,state_code,object,Derived or source variable; see analysis code.,0.0,53
+landmarks,county,object,Derived or source variable; see analysis code.,0.0,1074
+landmarks,balancing_authority_code,object,Derived or source variable; see analysis code.,0.0,68
+landmarks,sector_name,object,Derived or source variable; see analysis code.,0.0,7
+landmarks,sector_group,object,Derived or source variable; see analysis code.,0.0,4
+landmarks,technology_name,object,Derived or source variable; see analysis code.,0.0,13
+landmarks,technology_group,object,Derived or source variable; see analysis code.,0.0,6
+landmarks,energy_source_code,object,Derived or source variable; see analysis code.,0.0,14
+landmarks,prime_mover_code,object,Derived or source variable; see analysis code.,0.0,13
+landmarks,capacity_mw,float64,Derived or source variable; see analysis code.,0.0003329171868497711,914
+landmarks,planned_operation_month,object,Derived or source variable; see analysis code.,0.00016645859342488556,167
+landmarks,planned_operation_ordinal,float64,Derived or source variable; see analysis code.,0.00016645859342488556,167
+landmarks,raw_status,object,Derived or source variable; see analysis code.,0.0,8
+landmarks,current_state,object,Harmonized monthly delivery state.,0.0,8
+landmarks,latitude,float64,Derived or source variable; see analysis code.,0.0019142738243861839,5899
+landmarks,longitude,float64,Derived or source variable; see analysis code.,0.0021639617145235122,6005
+landmarks,first_report_ordinal,int64,Derived or source variable; see analysis code.,0.0,111
+landmarks,initial_planned_operation_ordinal,float64,Derived or source variable; see analysis code.,0.00024968789013732833,167
+landmarks,event_type,object,"First modeled terminal event: O operation, C cancellation, or censored.",0.0,3
+landmarks,event_ordinal,float64,Derived or source variable; see analysis code.,0.2725759467332501,113
+landmarks,terminal_category,object,Derived or source variable; see analysis code.,0.0,5
+landmarks,eligible_primary_cohort,bool,Derived or source variable; see analysis code.,0.0,1
+landmarks,analysis_split,object,Derived or source variable; see analysis code.,0.0,4
+landmarks,development_cluster_id,object,"Plant, technology group, and initial reported operation-month cluster used to reduce multi-unit pseudo-replication.",0.0,6713
+landmarks,development_cluster_size,int64,Derived or source variable; see analysis code.,0.0,10
+landmarks,cluster_equalizing_weight,float64,Inverse number of generating units in the plant-development cluster.,0.0,10
+landmarks,months_since_first_report,int64,Derived or source variable; see analysis code.,0.0,2
+landmarks,initial_reported_lead_months,float64,Derived or source variable; see analysis code.,0.00024968789013732833,73
+landmarks,months_to_reported_operation,float64,Derived or source variable; see analysis code.,0.00016645859342488556,76
+landmarks,log1p_capacity_mw,float64,Derived or source variable; see analysis code.,0.0003329171868497711,914
+landmarks,schedule_revision_count,int64,Cumulative count of reported operation-date changes available at the observation month.,0.0,7
+landmarks,absolute_schedule_movement_months,float64,Derived or source variable; see analysis code.,0.0,36
+landmarks,cumulative_schedule_slip_months,float64,Current reported operation month minus the initial reported operation month.,0.00024968789013732833,48
+landmarks,state_reversal_count,int64,Cumulative number of backward movements in the ordered delivery-stage sequence.,0.0,3
+landmarks,months_in_current_state,int64,Derived or source variable; see analysis code.,0.0,7
+landmarks,concurrent_entity_pipeline_units,int64,Derived or source variable; see analysis code.,0.0,48
+landmarks,prior_entity_completions,int64,Derived or source variable; see analysis code.,0.0,75
+landmarks,landmark_age_months,int64,Derived or source variable; see analysis code.,0.0,2
+landmarks,months_to_event,float64,Derived or source variable; see analysis code.,0.2725759467332501,95
+landmarks,observable_12_month_outcome,bool,Derived or source variable; see analysis code.,0.0,2
+landmarks,observable_24_month_outcome,bool,Derived or source variable; see analysis code.,0.0,2
+landmarks,operation_within_12_months,int64,Derived or source variable; see analysis code.,0.0,2
+landmarks,cancellation_within_24_months,int64,Derived or source variable; see analysis code.,0.0,2

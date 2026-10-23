@@ -1,0 +1,281 @@
+[
+  {
+    "check": "continuous monthly archive",
+    "passed": true,
+    "severity": "error",
+    "evidence": {
+      "continuous_monthly_archive": true,
+      "duplicated_months": [],
+      "expected_month_count": 129,
+      "first_month": "2015-09",
+      "last_month": "2026-05",
+      "missing_months": [],
+      "monthly_file_count": 129
+    }
+  },
+  {
+    "check": "unique unit-month rows",
+    "passed": true,
+    "severity": "error",
+    "evidence": 0
+  },
+  {
+    "check": "terminal events follow cohort entry",
+    "passed": true,
+    "severity": "error",
+    "evidence": 0
+  },
+  {
+    "check": "all states are harmonized",
+    "passed": true,
+    "severity": "error",
+    "evidence": {
+      "invalid_current": [],
+      "invalid_next": []
+    }
+  },
+  {
+    "check": "transition gaps restricted to immediate states",
+    "passed": true,
+    "severity": "error",
+    "evidence": 0
+  },
+  {
+    "check": "temporal entry-cohort splits are project-disjoint",
+    "passed": true,
+    "severity": "error",
+    "evidence": {
+      "train|validation": 0,
+      "train|test": 0,
+      "validation|test": 0
+    }
+  },
+  {
+    "check": "landmark event labels are observable",
+    "passed": true,
+    "severity": "error",
+    "evidence": {
+      "operation_12m": 0,
+      "cancellation_24m": 0
+    }
+  },
+  {
+    "check": "primary cohort contains only prespecified clean technologies",
+    "passed": true,
+    "severity": "error",
+    "evidence": 0
+  },
+  {
+    "check": "cluster weights are finite",
+    "passed": true,
+    "severity": "error",
+    "evidence": 0
+  },
+  {
+    "check": "all required analysis artifacts exist",
+    "passed": true,
+    "severity": "error",
+    "evidence": []
+  },
+  {
+    "check": "all prespecified benchmark families and backends are present",
+    "passed": true,
+    "severity": "error",
+    "evidence": {
+      "next_state": {
+        "missing_models": [],
+        "nonfinite_numeric_cells": 0,
+        "backend_ok": true
+      },
+      "operation_12m": {
+        "missing_models": [],
+        "nonfinite_numeric_cells": 0,
+        "backend_ok": true
+      },
+      "cancellation_24m": {
+        "missing_models": [],
+        "nonfinite_numeric_cells": 0,
+        "backend_ok": true
+      }
+    }
+  },
+  {
+    "check": "Delivery-PathMoE conserves probability mass",
+    "passed": true,
+    "severity": "error",
+    "evidence": {
+      "splits": [
+        "test",
+        "validation"
+      ],
+      "maximum_probability_mass_error": 8.658650452186833e-07,
+      "observations": 1670
+    }
+  },
+  {
+    "check": "Delivery sparse-MoE routing uses every expert",
+    "passed": true,
+    "severity": "error",
+    "evidence": {
+      "next_state_boosting_validation.csv": {
+        "selected_rows": 1,
+        "minimum_expert_utilization": 0.2388844490051269
+      },
+      "landmark_delivery_sparse_moe_validation.csv": {
+        "selected_rows": 1,
+        "minimum_expert_utilization": 0.2333924919366836
+      }
+    }
+  },
+  {
+    "check": "proposed ensemble weights satisfy simplex constraints",
+    "passed": true,
+    "severity": "error",
+    "evidence": {
+      "next_state": {
+        "learners": [
+          "empirical_markov",
+          "multinomial_logistic",
+          "random_forest",
+          "extra_trees",
+          "hist_gradient_boosting",
+          "lightgbm_cpu",
+          "catboost_gpu",
+          "xgboost_gpu"
+        ],
+        "maximum_sum_error": 2.220446049250313e-16,
+        "negative_weights": 0
+      },
+      "operation_12m": {
+        "learners": [
+          "status_schedule_logistic",
+          "full_logistic",
+          "random_forest",
+          "extra_trees",
+          "hist_gradient_boosting",
+          "lightgbm_cpu",
+          "catboost_gpu",
+          "xgboost_gpu"
+        ],
+        "maximum_sum_error": 1.1102230246251565e-16,
+        "negative_weights": 0
+      },
+      "cancellation_24m": {
+        "learners": [
+          "status_schedule_logistic",
+          "full_logistic",
+          "random_forest",
+          "extra_trees",
+          "hist_gradient_boosting",
+          "lightgbm_cpu",
+          "catboost_gpu",
+          "xgboost_gpu"
+        ],
+        "maximum_sum_error": 1.1102230246251565e-16,
+        "negative_weights": 0
+      }
+    }
+  },
+  {
+    "check": "adjusted association models converged with finite inference",
+    "passed": true,
+    "severity": "error",
+    "evidence": [
+      {
+        "outcome": "operation_within_12_months",
+        "status": "fitted",
+        "n": 6521,
+        "events": 2965,
+        "clusters": 3158,
+        "excluded_sparse_or_nonplanned_entry_states": 2,
+        "cluster_robust_covariance": true,
+        "cluster_equalizing_weights_used": false,
+        "collinear_initial_lead_removed": true,
+        "status_collapsed_to_three_delivery_phases": true,
+        "converged": true,
+        "aic": 4196.705449237684,
+        "deviance": 4170.705449237684,
+        "iterations": 8
+      },
+      {
+        "outcome": "cancellation_within_24_months",
+        "status": "fitted",
+        "n": 5925,
+        "events": 267,
+        "clusters": 2869,
+        "excluded_sparse_or_nonplanned_entry_states": 2,
+        "cluster_robust_covariance": true,
+        "cluster_equalizing_weights_used": false,
+        "collinear_initial_lead_removed": true,
+        "status_collapsed_to_three_delivery_phases": true,
+        "converged": true,
+        "aic": 1708.406543253505,
+        "deviance": 1682.406543253505,
+        "iterations": 9
+      }
+    ]
+  },
+  {
+    "check": "operation_12m probabilities are bounded",
+    "passed": true,
+    "severity": "error",
+    "evidence": {
+      "status_schedule_logistic_probability": 0,
+      "full_logistic_probability": 0,
+      "random_forest_probability": 0,
+      "extra_trees_probability": 0,
+      "hist_gradient_boosting_probability": 0,
+      "delivery_competing_risk_net_gpu_probability": 0,
+      "delivery_sparse_moe_gpu_probability": 0,
+      "delivery_path_moe_gpu_probability": 0,
+      "lightgbm_cpu_probability": 0,
+      "catboost_gpu_probability": 0,
+      "xgboost_gpu_probability": 0,
+      "tabm_gpu_probability": 0,
+      "equal_weight_pool_ablation_probability": 0,
+      "proposed_delivery_ensemble_probability": 0
+    }
+  },
+  {
+    "check": "cancellation_24m probabilities are bounded",
+    "passed": true,
+    "severity": "error",
+    "evidence": {
+      "status_schedule_logistic_probability": 0,
+      "full_logistic_probability": 0,
+      "random_forest_probability": 0,
+      "extra_trees_probability": 0,
+      "hist_gradient_boosting_probability": 0,
+      "delivery_competing_risk_net_gpu_probability": 0,
+      "delivery_sparse_moe_gpu_probability": 0,
+      "delivery_path_moe_gpu_probability": 0,
+      "lightgbm_cpu_probability": 0,
+      "catboost_gpu_probability": 0,
+      "xgboost_gpu_probability": 0,
+      "tabm_gpu_probability": 0,
+      "equal_weight_pool_ablation_probability": 0,
+      "proposed_delivery_ensemble_probability": 0
+    }
+  },
+  {
+    "check": "next-state probability vectors sum to one",
+    "passed": true,
+    "severity": "error",
+    "evidence": {
+      "equal_weight_pool_ablation": 4.440892098500626e-16,
+      "catboost_gpu": 4.440892098500626e-16,
+      "lightgbm_cpu": 4.440892098500626e-16,
+      "random_forest": 3.3306690738754696e-16,
+      "xgboost_gpu": 3.3306690738754696e-16,
+      "proposed_delivery_ensemble": 4.440892098500626e-16,
+      "delivery_state_residual_net_gpu": 3.3306690738754696e-16,
+      "delivery_sparse_moe_gpu": 3.3306690738754696e-16,
+      "hist_gradient_boosting": 4.440892098500626e-16,
+      "tabm_gpu": 4.440892098500626e-16,
+      "delivery_net_no_markov_ablation": 3.3306690738754696e-16,
+      "multinomial_logistic": 4.440892098500626e-16,
+      "empirical_markov": 1.1102230246251565e-16,
+      "extra_trees": 4.440892098500626e-16
+    }
+  }
+]

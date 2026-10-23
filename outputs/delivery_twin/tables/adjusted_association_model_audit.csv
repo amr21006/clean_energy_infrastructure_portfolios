@@ -1,0 +1,3 @@
+﻿outcome,status,n,events,clusters,excluded_sparse_or_nonplanned_entry_states,cluster_robust_covariance,cluster_equalizing_weights_used,collinear_initial_lead_removed,status_collapsed_to_three_delivery_phases,converged,aic,deviance,iterations
+operation_within_12_months,fitted,6521,2965,3158,2,True,False,True,True,True,4196.705449237684,4170.705449237684,8
+cancellation_within_24_months,fitted,5925,267,2869,2,True,False,True,True,True,1708.4065432535053,1682.4065432535053,9

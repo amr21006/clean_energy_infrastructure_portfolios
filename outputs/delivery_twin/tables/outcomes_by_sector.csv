@@ -1,0 +1,16 @@
+﻿sector_group,outcome,units,development_clusters,capacity_mw,unit_share_within_subgroup
+commercial,canceled,4,4,96.8,0.0625
+commercial,operating_or_later_retired,54,50,334.3,0.84375
+commercial,planned,6,6,414.7,0.09375
+electric_utility,canceled,24,24,1953.6,0.03162055335968379
+electric_utility,operating_or_later_retired,597,584,35352.9,0.7865612648221344
+electric_utility,planned,125,123,15500.8,0.16469038208168643
+electric_utility,unresolved,13,12,686.4,0.017127799736495388
+independent_power_producer,canceled,495,473,48116.2,0.07903560593964554
+independent_power_producer,operating_or_later_retired,4024,3780,204141.0,0.6425035925275427
+independent_power_producer,planned,1606,1493,195923.4,0.2564266326041833
+independent_power_producer,unresolved,138,122,6807.8,0.02203416892862845
+industrial,canceled,6,4,32.9,0.06976744186046512
+industrial,operating_or_later_retired,64,48,1162.7,0.7441860465116279
+industrial,planned,14,11,171.5,0.16279069767441862
+industrial,unresolved,2,2,23.4,0.023255813953488372

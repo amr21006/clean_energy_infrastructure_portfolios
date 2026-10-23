@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "elapsed_seconds": 2242.12771320343,
+  "projects": 10262,
+  "panel_rows": 178528,
+  "transition_rows": 175420,
+  "landmark_rows": 12015,
+  "validation_checks": 18,
+  "validation_checks_passed": 18
+}

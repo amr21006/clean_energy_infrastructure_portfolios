@@ -1,0 +1,85 @@
+{
+  "configuration": {
+    "raw_dir": "data/raw",
+    "output_dir": "outputs/delivery_twin",
+    "seed": 20260713,
+    "bootstrap_reps": 500,
+    "burn_in_months": 12,
+    "primary_horizon_months": 12,
+    "cancellation_horizon_months": 24,
+    "train_entry_end": "2021-12",
+    "validation_entry_start": "2022-01",
+    "validation_entry_end": "2022-12",
+    "test_entry_start": "2023-01",
+    "test_entry_end": "2024-05",
+    "random_search_iterations": 2,
+    "status_order": [
+      "P",
+      "L",
+      "T",
+      "U",
+      "V",
+      "TS",
+      "O",
+      "C",
+      "OTHER"
+    ],
+    "clean_groups": [
+      "solar",
+      "wind",
+      "storage",
+      "hydro",
+      "other_renewable"
+    ],
+    "stable_categorical_features": [
+      "state_code",
+      "technology_group",
+      "sector_group",
+      "energy_source_code",
+      "prime_mover_code",
+      "current_state"
+    ],
+    "numeric_features": [
+      "log1p_capacity_mw",
+      "months_since_first_report",
+      "months_in_current_state",
+      "months_to_reported_operation",
+      "schedule_revision_count",
+      "cumulative_schedule_slip_months",
+      "absolute_schedule_movement_months",
+      "state_reversal_count",
+      "concurrent_entity_pipeline_units",
+      "prior_entity_completions",
+      "initial_reported_lead_months"
+    ]
+  },
+  "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "package_versions": {
+    "catboost": "1.2.10",
+    "lightgbm": "4.6.0",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "pyarrow": "23.0.1",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.15.3",
+    "statsmodels": "0.14.6",
+    "tabm": "0.0.3",
+    "torch": "2.11.0+cu128",
+    "xgboost": "3.2.0"
+  },
+  "gpu_inventory": "Quadro T1000 with Max-Q Design, 595.95, 4096",
+  "backend_policy": {
+    "catboost": "cuda_gpu",
+    "xgboost": "cuda_gpu",
+    "tabm": "cuda_gpu",
+    "delivery_state_residual_network": "cuda_gpu_exploratory",
+    "delivery_competing_risk_network": "cuda_gpu_exploratory",
+    "delivery_sparse_moe": "cuda_gpu_exploratory_standalone_model",
+    "lightgbm": "cpu_after_matched_runtime_profile",
+    "classic_models": "cpu",
+    "proposed_ensemble": "hybrid_postprocessing"
+  },
+  "raw_download_manifest": "data/raw/download_manifest.csv",
+  "raw_download_manifest_sha256": "c00a02bd5f024a45294287785c24ca5cf4f41b58cae4e9664d48e92995212572"
+}

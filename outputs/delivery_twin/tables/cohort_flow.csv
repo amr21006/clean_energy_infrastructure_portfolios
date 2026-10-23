@@ -1,0 +1,7 @@
+﻿order,cohort_stage,unit_count,development_cluster_count,removed_from_previous
+1,All EIA-860M units ever observed as planned,10262,8515,0
+2,After 12-month archive burn-in,8632,7313,1630
+3,Clean-infrastructure technologies,7253,6793,1379
+4,No operation before or at first planned observation,7172,6713,81
+5,Primary longitudinal cohort,7172,6713,0
+6,Primary cohort with at least 24 months potential follow-up,5249,4889,1923
